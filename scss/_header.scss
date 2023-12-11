@@ -1,0 +1,51 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+header {
+  background-color: $white-color;
+}
+
+nav {
+  border-color: $main-blue-color;
+  border-width: 0.1rem;
+  border-style: solid;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem $mobile-default-margin;
+  border-width: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  border-width: 1rem;
+  border-color: $main-blue-color;
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  margin: 0;
+  background-color: $grey-color;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: $white-color;
+  background-color: $lighter-blue-color;
+}
+
+.nav-item {
+  border-top: solid $main-blue-color;
+}
+
+.nav-item:nth-of-type(5) {
+  border-bottom: solid $main-blue-color;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+}

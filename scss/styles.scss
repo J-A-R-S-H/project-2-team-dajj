@@ -1,0 +1,27 @@
+@use "variables" as *;
+@use "mixins" as *;
+@use "reset";
+@use "page-margin";
+@use "header";
+@use "image-showcase-section";
+@use "latest-recipes-section";
+@use "cuisines-section";
+@use "food-articles-section";
+@use "footer";
+
+body {
+  font-family: $body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+}
+
+p {
+  font-family: $body-font;
+}
