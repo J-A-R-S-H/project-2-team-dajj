@@ -1,0 +1,12 @@
+styles/*.css
+styles/*.map
+
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
