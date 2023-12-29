@@ -1,9 +1,13 @@
 @use "variables" as *;
 @use "mixins" as *;
 
-h2 {
+.latest-recipes h2 {
     background-color: $main-blue-color;
-    margin-left: .5rem;
+    padding-left: .4rem;
+    margin-bottom: .2rem;
+}
 
-
+.recipes-food {
+    display: flex;
+    padding: 0 0.5rem;
 }
