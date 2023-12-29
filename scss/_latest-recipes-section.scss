@@ -2,9 +2,11 @@
 @use "mixins" as *;
 
 .latest-recipes h2 {
-    background-color: $main-blue-color;
+    background-color: $lighter-blue-color;
+    padding: .5rem;
     padding-left: .4rem;
     margin-bottom: .2rem;
+    font-family: $body-font;
 }
 
 .recipes-food {
