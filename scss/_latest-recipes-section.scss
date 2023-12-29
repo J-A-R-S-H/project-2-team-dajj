@@ -9,5 +9,22 @@
 
 .recipes-food {
     display: flex;
-    padding: 0 0.5rem;
+    padding: 0.5rem;
+    align-items: center;
+    gap: .5rem;
+
+
+}
+
+.recipes-food img {
+    border: 1px solid $main-blue-color;
+}
+
+.latest-recipes {
+    margin: 1rem;
+    background-color: $grey-color;
+}
+
+.recipes-food:nth-of-type(odd) {
+    background-color: $white-color;
 }
