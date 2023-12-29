@@ -1,12 +1,13 @@
 @use "variables" as *;
 @use "mixins" as *;
 
-.latest-recipes h2 {
+.title-card {
     background-color: $lighter-blue-color;
     padding: .5rem;
     padding-left: .4rem;
     margin-bottom: .2rem;
     font-family: $body-font;
+    font-size: 1.5rem;
 }
 
 .recipes-food {
