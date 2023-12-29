@@ -2,12 +2,21 @@
 @use "mixins" as *;
 
 @include mq(1024) {
-    .flex-side {
-        display: flex;
+  .flex-side {
+    position: relative;
+  }
 
-    }
+  .column-right {
+    width: 16%;
+    position: absolute;
+    right: 16%;
+    top: 10%;
+  }
 
-    .column-right {
-        width: 20%;
-    }
+  .images-showcase,
+  .food-articles,
+  .images-showcase {
+    width: 62%;
+    margin-left: $desktop-default-margin;
+  }
 }

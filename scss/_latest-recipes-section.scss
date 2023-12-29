@@ -2,38 +2,35 @@
 @use "mixins" as *;
 
 .title-card {
-    background-color: $lighter-blue-color;
-    padding: .5rem;
-    padding-left: .4rem;
-    font-family: $body-font;
-    font-size: 1.5rem;
-
+  background-color: $lighter-blue-color;
+  padding: 0.5rem;
+  padding-left: 0.4rem;
+  font-family: $body-font;
+  font-size: 1.5rem;
 }
 
 .recipes-food {
-    display: flex;
-    padding: 0.5rem;
-    align-items: center;
-    gap: .5rem;
-
-
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .recipes-food img {
-    border: 1px solid $main-blue-color;
+  border: 1px solid $main-blue-color;
 }
 
 .latest-recipes {
-    margin: 1rem;
-    background-color: $grey-color;
+  margin: 1rem;
+  background-color: $grey-color;
 }
 
 .recipes-food:nth-of-type(odd) {
-    background-color: $white-color;
+  background-color: $white-color;
 }
 
 @include mq(1024) {
-    .latest-recipes {
-        margin-left: 4.5rem;
-    }
+  .latest-recipes {
+    margin: 0rem;
+  }
 }

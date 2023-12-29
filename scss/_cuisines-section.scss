@@ -2,42 +2,38 @@
 @use "mixins" as *;
 
 .grid-cuisines {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: .5rem;
-    align-items: center;
-    padding: .7rem;
-    background-color: $white-color;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.7rem;
+  background-color: $white-color;
 }
 
-
 .cuisines {
-    margin: 0 $mobile-default-margin;
+  margin: 0 $mobile-default-margin;
 }
 
 @include mq(425) {
-    .grid-cuisines {
-        padding-right: 6rem;
-
-    }
+  .grid-cuisines {
+    padding-right: 6rem;
+  }
 }
 
 @include mq(768) {
-    .grid-cuisines {
-        padding-right: 14rem;
-        grid-template-columns: 1fr 1fr 1fr;
-
-    }
+  .grid-cuisines {
+    padding-right: 14rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @include mq(1024) {
-    .cuisines {
-        margin-left: 4.5rem;
-    }
+  .cuisines {
+    margin: 0rem;
+  }
 
-    .grid-cuisines {
-        grid-template-columns: 1fr;
-        padding-right: 0;
-    }
+  .grid-cuisines {
+    grid-template-columns: 1fr;
+    padding-right: 0;
+  }
 }
