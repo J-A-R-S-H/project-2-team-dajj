@@ -1,0 +1,13 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+@include mq(1024) {
+    .flex-side {
+        display: flex;
+
+    }
+
+    .column-right {
+        width: 20%;
+    }
+}

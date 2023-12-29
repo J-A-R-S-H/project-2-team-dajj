@@ -31,3 +31,9 @@
 .recipes-food:nth-of-type(odd) {
     background-color: $white-color;
 }
+
+@include mq(1024) {
+    .latest-recipes {
+        margin-left: 4.5rem;
+    }
+}
