@@ -1,22 +1,12 @@
 @use "variables" as *;
 @use "mixins" as *;
 
-@include mq(1024) {
+@include mq(770) {
   .flex-side {
+    max-width: 65.625rem;
+    margin: 0 auto;
     position: relative;
-  }
-
-  .column-right {
-    width: 16%;
-    position: absolute;
-    right: 16%;
-    top: 10%;
-  }
-
-  .images-showcase,
-  .food-articles,
-  .images-showcase {
-    width: 62%;
-    margin-left: $desktop-default-margin;
+    display: flex;
+    justify-content: center;
   }
 }

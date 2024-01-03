@@ -3,7 +3,7 @@
 
 .grid-cuisines {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 9rem 9rem;
   gap: 0.5rem;
   align-items: center;
   padding: 0.7rem;
@@ -11,27 +11,16 @@
 }
 
 .cuisines {
-  margin: 0 $mobile-default-margin;
+  margin: .625rem;
 }
 
-@include mq(425) {
+@include mq(550) {
   .grid-cuisines {
-    padding-right: 6rem;
+    grid-template-columns: repeat(3, 9rem);
   }
 }
 
-@include mq(768) {
-  .grid-cuisines {
-    padding-right: 14rem;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@include mq(1024) {
-  .cuisines {
-    margin: 0rem;
-  }
-
+@include mq(770) {
   .grid-cuisines {
     grid-template-columns: 1fr;
     padding-right: 0;
