@@ -44,6 +44,12 @@
         div {
             margin: 0;
         }
+
+        .showcase-1 img,
+        .showcase-2 img,
+        .showcase-3 img {
+            height: 25vh;
+        }
     }
 
     .showcase-1 {
@@ -62,8 +68,7 @@
 @include mq(770) {
     .images-showcase {
         margin: 0.625rem 0 .625rem .625rem;
-        grid-template-rows: repeat(3, 1fr);
-        height: 40vh;
+        grid-template-rows: repeat(2, 1fr);
 
         .showcase-1 img,
         .showcase-2 img,
