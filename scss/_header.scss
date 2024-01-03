@@ -14,7 +14,7 @@ nav {
 .header-top {
   display: flex;
   justify-content: space-between;
-  margin: 0.5rem $mobile-default-margin;
+  padding: 0.5rem $mobile-default-margin;
   border-width: 1rem;
 }
 
@@ -48,4 +48,34 @@ nav {
 .social-media-icons {
   display: flex;
   justify-content: center;
+}
+
+.main-logo {
+  display: none;
+}
+
+.navigation-menu {
+  display: none;
+  transition: margin-right 2s ease-in-out;
+}
+
+.display-dropdown {
+  display: block;
+  transition: margin-right 2s ease-in-out;
+}
+
+@include mq(425) {
+  .mobile-main-logo {
+    display: none;
+  }
+
+  .main-logo {
+    display: block;
+  }
+}
+
+@include mq(768) {
+  .mobile-header {
+    display: none;
+  }
 }

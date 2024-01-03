@@ -2,26 +2,6 @@
 @use "mixins" as *;
 
 @include mq(1024) {
-  // .flex-side {
-  //   position: relative;
-  // }
-
-  // .column-right {
-  //   width: 16%;
-  //   position: absolute;
-  //   right: 16%;
-  //   top: 10%;
-  // }
-
-  // .images-showcase,
-  // .food-articles,
-  // .images-showcase {
-  //   width: 62%;
-  //   margin-left: $desktop-default-margin;
-  // }
-}
-
-@include mq(1024) {
   .grid-display {
     display: grid;
     grid-template-columns: 60% 20%;
