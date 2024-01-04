@@ -1,2 +1,87 @@
 @use "variables" as *;
 @use "mixins" as *;
+
+
+.food-article {
+    padding: .5rem;
+    margin: .5rem;   
+}
+
+.food-article-header {
+    color: $lighter-blue-color;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.food-article img{
+    padding: 2rem 0 1rem 0;
+    width: 100%;
+    height: auto;
+}
+
+.read-more-box-link {
+    display: inline-block;
+    background-color: $lighter-blue-color;
+    color: $white-color;
+	margin: 1rem 0;
+	padding: .3rem;
+	text-align: center;
+	text-decoration: none;
+    position: relative;
+    left:100%;
+    transform: translateX(-100%);
+}
+
+
+@include mq($tabletLarge){
+
+    .food-article {
+        padding: 1rem;
+    }
+
+    .food-article-header {
+        font-size: 3rem;
+    }
+
+    .food-article p {
+        font-size: 1.1rem;
+    }
+
+    .food-article img{
+        padding: 2.5rem 0 1.8rem 0;
+    }
+
+    .read-more-box-link {
+        margin: 1.5rem 0;
+        padding: 0.6rem 1.3rem;
+        font-size: 1.1rem;
+        // font-weight: 600;
+    }
+}
+
+@include mq($desktop){
+
+    .food-article {
+        padding: 1rem;
+    }
+
+    .food-article-header {
+        font-size: 3rem;
+    }
+
+    .food-article p {
+        font-size: 1.3rem;
+    }
+
+    .food-article img{
+        padding: 4rem 0 2rem 0;
+    }
+
+    .read-more-box-link {
+        margin: 2rem 0;
+        padding: 0.8rem 1.1rem;
+        font-size: 1.5rem;
+        // font-weight: 600;
+
+    }
+}
