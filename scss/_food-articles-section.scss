@@ -33,6 +33,10 @@
     transform: translateX(-100%);
 }
 
+.posts-btn {
+   margin: 2rem 0.625rem;
+}
+
 
 @include mq($tabletLarge){
 
