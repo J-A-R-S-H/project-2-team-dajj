@@ -4,8 +4,8 @@
 
 .food-article {
     padding: .5rem;
-    margin: .5rem;  
-    background-color: $white-color; 
+    margin: 0.625rem;
+    background-color: $white-color;
 }
 
 .food-article-header {
@@ -14,7 +14,7 @@
     font-weight: 500;
 }
 
-.food-article img{
+.food-article img {
     padding: 2rem 0 1rem 0;
     width: 100%;
     height: auto;
@@ -24,21 +24,27 @@
     display: inline-block;
     background-color: $lighter-blue-color;
     color: $white-color;
-	margin: 1rem 0;
-	padding: .3rem;
-	text-align: center;
-	text-decoration: none;
+    margin: 1rem 0;
+    padding: .3rem;
+    text-align: center;
+    text-decoration: none;
     position: relative;
-    left:100%;
+    left: 100%;
     transform: translateX(-100%);
 }
 
 .posts-btn {
-   margin: 2rem 0.625rem;
+    margin: 2rem 0.625rem;
+}
+
+@include mq(770) {
+    .food-article {
+        margin-right: 0;
+    }
 }
 
 
-@include mq($tabletLarge){
+@include mq($tabletLarge) {
 
     .food-article {
         padding: 1rem;
@@ -52,7 +58,7 @@
         font-size: 1.1rem;
     }
 
-    .food-article img{
+    .food-article img {
         padding: 2.5rem 0 1.8rem 0;
     }
 
@@ -64,7 +70,7 @@
     }
 }
 
-@include mq($desktop){
+@include mq($desktop) {
 
     .food-article {
         padding: 1rem;
@@ -78,7 +84,7 @@
         font-size: 1.3rem;
     }
 
-    .food-article img{
+    .food-article img {
         padding: 4rem 0 2rem 0;
     }
 
